@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  errbot:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: "unless-stopped"
+    image: mattermost-errbot
+    volumes:
+      - "./config.py:/bot/config.py"
+      - "./data:/bot/data"
+      - "./plugins:/bot/plugins"
+    ports:
+      - "3141:3141"
+      - "3142:3142"
+    command: errbot --config /bot/config.py
