@@ -5,7 +5,7 @@ BACKEND = "Mattermost"
 
 BOT_DATA_DIR = r"/bot/data"
 BOT_EXTRA_PLUGIN_DIR = r"/bot/plugins"
-BOT_EXTRA_BACKEND_DIR = "/usr/local/lib/python3.9/site-packages"
+BOT_EXTRA_BACKEND_DIR = "/usr/local/lib/python3.10/site-packages"
 
 BOT_LOG_FILE = r"/bot/errbot.log"
 BOT_LOG_LEVEL = logging.INFO
